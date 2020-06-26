@@ -198,3 +198,6 @@ via1_rtc_cmd_pram_read(int addr, int value) "addr=%u value=0x%02x"
 via1_rtc_cmd_pram_write(int addr, int value) "addr=%u value=0x%02x"
 via1_rtc_cmd_pram_sect_read(int sector, int offset, int addr, int value) "sector=%u offset=%u addr=%d value=0x%02x"
 via1_rtc_cmd_pram_sect_write(int sector, int offset, int addr, int value) "sector=%u offset=%u addr=%d value=0x%02x"
+
+# pcie-testdev.c
+dma_transfer(void *src, void *dest, uint64_t length, int status) "DMA Transfer from source addr %p to dest addr %p, length %" PRIu64 ", status = %d"
